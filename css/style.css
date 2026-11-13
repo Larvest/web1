@@ -33,6 +33,19 @@ main {
     min-height: 80vh;
 }
 
+main .container {
+    align-items: center;
+}
+
+main form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+
 footer {
     margin-top: 5%;
     border-top: 4px solid #c2b790;
