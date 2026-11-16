@@ -4,6 +4,12 @@ body {
     font-family: "Jost", sans-serif;
 }
 
+.burger {
+    display: none;
+    background-color: unset;
+    border: unset;
+}
+
 input {
     text-decoration: none;
     color: #ffffff;
@@ -206,4 +212,123 @@ footer {
 
 .filter {
     padding-bottom: 20px;
+}
+
+@media (max-width: 1199px) {
+    .main-container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .catalog {
+        grid-template-columns: auto auto;
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-left: 0;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .burger {
+        display:block;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .menu {
+        justify-content: end;
+
+    }
+
+    .main-container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    header .container {
+        flex-direction: unset;
+        gap: 10px;
+    }
+
+    header .menu {
+        width: 100%;
+        padding: 0 0px 0px;
+    }
+
+    header img {
+        padding-left: 20px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu ul a {
+        display: block;
+        text-align: center;
+    }
+
+    .catalog {
+        grid-template-columns: auto;
+    }
+
+    .gamecard {
+        border-radius: 30px;
+    }
+
+    footer {
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 15px;
+    }
+
+    .filter {
+        max-width: 50%;
+    }
+
+    .profile-info {
+        flex-direction: column;
+    }
+
+    main form button {
+        width: 100%;
+    }
+    main form input {
+        width: 100%;
+    }
+
+    main form textarea {
+        width: 100%;
+    }
+    
+    a {
+        padding: 10px 20px;
+    }    
+    
+    button {
+        padding: 10px 20px;
+    }    
+    
+    input {
+        padding: 10px 20px;
+    }
 }

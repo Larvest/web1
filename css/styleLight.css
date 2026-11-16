@@ -1,0 +1,334 @@
+body {
+    background-color: #D3D3D3;
+    color: #000000;
+    font-family: "Jost", sans-serif;
+}
+
+.burger {
+    display: none;
+    background-color: unset;
+    border: unset;
+}
+
+input {
+    text-decoration: none;
+    color: #000000;
+    background-color: unset;
+    border: 1px solid #000000;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+textarea {
+    background-color: #EBEBEB;
+    color: #000000;
+}
+
+button {
+    text-decoration: none;
+    color: #000000;
+    background-color: #EBEBEB;
+    border: 1px solid #000000;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+button:hover {
+    transition: 0.3s;
+    background-color: #D3D3D3;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    background-color: unset;
+    border: 1px solid #000000;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+
+
+a:hover {
+    transition: 0.3s;
+    background-color: #d3d3d3;
+}
+
+.main-container {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.container {
+    padding: 5px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+
+header {
+    border-radius: 50px;
+    background-color: #DCDCDC;
+    margin-bottom: 5%;
+    position: sticky;
+    top: 0;
+}
+
+header .menu {
+    padding-right: 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.logo:hover {
+    background-color: unset;
+}
+
+header img {
+    max-height: 50px;
+    padding: 5px;
+    padding-left: 20px;
+    display: block;
+}
+
+.logo {
+    padding: 0 0;
+    border: unset;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu ul {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+main {
+    min-height: 80vh;
+}
+
+main .container {
+    align-items: center;
+}
+
+main form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+
+footer {
+    margin-top: 20px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    background-color: #DCDCDC;
+}
+
+.footer-menu {
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ulRight {
+    align-items: flex;
+}
+
+.footer-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu a {
+    display: block;
+    text-align: center;
+}
+
+.purchase-history {
+    display: grid;
+    gap: 20px;
+}
+
+
+.card {
+    border-radius: 50px;
+    background-color: #DCDCDC;
+    padding: 20px;
+    max-width: parent;
+    max-height: 400px;
+}
+
+.card:hover {
+    transition: 0.3s;
+    background-color: #C9C9C9;
+}
+
+.settings {
+    padding-bottom: 20px;
+}
+
+.title {
+    display: grid;
+    justify-content: center;
+    font-size: 50px;
+    padding-bottom: 20px;
+
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.gamecard {
+    text-align: center;
+    border-radius: 50px;
+    background-color: #DCDCDC;
+    padding: 8px;
+    border: 1px solid #000000;
+}
+
+.filter {
+    padding-bottom: 20px;
+}
+
+@media (max-width: 1199px) {
+    .main-container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .catalog {
+        grid-template-columns: auto auto;
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-left: 0;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .burger {
+        display:block;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .menu {
+        justify-content: end;
+
+    }
+
+    .main-container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    header .container {
+        flex-direction: unset;
+        gap: 10px;
+    }
+
+    header .menu {
+        width: 100%;
+        padding: 0 0px 0px;
+    }
+
+    header img {
+        padding-left: 20px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu ul a {
+        display: block;
+        text-align: center;
+    }
+
+    .catalog {
+        grid-template-columns: auto;
+    }
+
+    .gamecard {
+        border-radius: 30px;
+    }
+
+    footer {
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 15px;
+    }
+
+    .filter {
+        max-width: 50%;
+    }
+
+    .profile-info {
+        flex-direction: column;
+    }
+
+    main form button {
+        width: 100%;
+    }
+    main form input {
+        width: 100%;
+    }
+
+    main form textarea {
+        width: 100%;
+    }
+    
+    a {
+        padding: 10px 20px;
+    }    
+    
+    button {
+        padding: 10px 20px;
+    }    
+    
+    input {
+        padding: 10px 20px;
+    }
+}
