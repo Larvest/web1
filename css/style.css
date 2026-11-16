@@ -61,3 +61,11 @@ footer {
     list-style: none;
     gap: 20px;
 }
+
+.card {
+    border: 2px solid #c2b790;
+    padding: 8px;
+    max-width: 250px;
+    max-height: 400px;
+    
+}
