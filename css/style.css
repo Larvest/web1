@@ -4,6 +4,34 @@ body {
     font-family: "Jost", sans-serif;
 }
 
+input {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: unset;
+    border: 1px solid #ffffff;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+textarea {
+    background-color: #141414;
+    color: #ffffff;
+}
+
+button {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #141414;
+    border: 1px solid #ffffff;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+button:hover {
+    transition: 0.3s;
+    background-color: #2C2C2C;
+}
+
 a {
     text-decoration: none;
     color: #ffffff;
@@ -31,9 +59,11 @@ a:hover {
 
 .profile-info {
     display: flex;
+    align-items: center;
     gap: 20px;
     padding-bottom: 20px;
 }
+
 
 header {
     border-radius: 50px;
@@ -96,6 +126,7 @@ main form {
     gap: 10px;
 }
 
+
 footer {
     margin-top: 20px;
     border-top-right-radius: 50px;
@@ -137,9 +168,14 @@ footer {
 .card {
     border-radius: 50px;
     background-color: #232323;
-    padding: 8px;
+    padding: 20px;
     max-width: parent;
     max-height: 400px;
+}
+
+.card:hover {
+    transition: 0.3s;
+    background-color: #363636;
 }
 
 .settings {
@@ -165,6 +201,7 @@ footer {
     border-radius: 50px;
     background-color: #232323;
     padding: 8px;
+    border: 1px solid #ffffff;
 }
 
 .filter {
