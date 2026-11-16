@@ -13,6 +13,12 @@ body {
     padding: 5px;
 }
 
+.profile-info {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
 header {
     border-bottom: 4px solid #c2b790;
     margin-bottom: 5%;
@@ -62,10 +68,19 @@ footer {
     gap: 20px;
 }
 
+.purchase-history {
+    display: grid;
+    gap: 20px;
+}
+
+
 .card {
     border: 2px solid #c2b790;
     padding: 8px;
-    max-width: 250px;
+    max-width: parent;
     max-height: 400px;
-    
+}
+
+.settings {
+    padding-bottom: 20px;
 }
