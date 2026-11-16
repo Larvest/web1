@@ -29,6 +29,10 @@ header .container {
     justify-content: space-between;
 }
 
+header img {
+    max-height: 50px;
+}
+
 .menu ul {
     display: flex;
     list-style: none;
