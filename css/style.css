@@ -51,7 +51,6 @@ main form {
     gap: 10px;
 }
 
-
 footer {
     margin-top: 5%;
     border-top: 4px solid #c2b790;
@@ -100,8 +99,9 @@ footer {
 }
 
 .gamecard {
+    text-align: center;
     border: 2px solid #c2b790;
-    padding: 8px;;
+    padding: 8px;
 }
 
 .filter {
