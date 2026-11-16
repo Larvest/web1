@@ -84,3 +84,26 @@ footer {
 .settings {
     padding-bottom: 20px;
 }
+
+.title {
+    display: grid;
+    justify-content: center;
+    font-size: 50px;
+    padding-bottom: 20px;
+
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.gamecard {
+    border: 2px solid #c2b790;
+    padding: 8px;;
+}
+
+.filter {
+    padding-bottom: 20px;
+}
